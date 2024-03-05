@@ -5,26 +5,26 @@ My lab partner's name is Christos Ioannidis (https://github.com/kirisaki-momotar
 
 =================================================================================================================================================================
 
-Instructions for Running the Simulation
+## Instructions for Running the Simulation
 
-Step 1: Navigate to the TinyOS Folder
+# Step 1: Navigate to the TinyOS Folder
 Change your directory to the TinyOS folder using the following command:
 
-cd /home/tinyos/local/src/tinyos-2x/apps/tinyOS
+```cd /home/tinyos/local/src/tinyos-2x/apps/tinyOS```
 
-Step 2: Build the Simulation
+# Step 2: Build the Simulation
 Execute the following command to build the simulation for MicaZ platform:
 
-make micaz sim
+```make micaz sim```
 
-Step 3: Create Topology File
+# Step 3: Create Topology File
 Generate a topology file specifying the grid's width and height (D), as well as the range of each node (RANGE). Use the following Python command:
 
-python ./topology_creator.py D RANGE
+```python ./topology_creator.py D RANGE```
 
-Step 4: Run the Simulation
+# Step 4: Run the Simulation
 Initiate the simulation by providing the total number of nodes (NUMBER_OF_NODES), which is also equal to D^2:
 
-python ./mySimulation.py NUMBER_OF_NODES
+```python ./mySimulation.py NUMBER_OF_NODES```
 
 These steps will ensure a smooth execution of the TinyOS simulation with your specified parameters.
